@@ -9,5 +9,12 @@ const moveDodgerLeft = () => {
   // which mean we need some css changes
   console.log(dodger.style.left)
 }
+
+const moveDodgerHelper = (event) => {
+  //going to figure out do we moveDodgerLeft of moveDodgerRight
+  if (event.keyCode === 37) {
+    moveDodgerLeft()
+  } 
+}
 // 3 Add event listener
-document.addEventListener()
+document.addEventListener('keydown', moveDodgerHelper)
