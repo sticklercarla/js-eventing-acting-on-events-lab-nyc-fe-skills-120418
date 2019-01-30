@@ -46,7 +46,9 @@ const moveDodgerDown = () => {
   const currentDown = dodger.style.bottom // '180px'
   let currentDownNumber = currentDown.replace('px', '')
   currentDownNumber = parseInt(currentDownNumber, 10)
+  if (currentDownNumber > 0) {
   dodger.style.bottom = currentDownNumber - 10 + 'px' //179px
+  }
 }
 const moveDodgerHelper = (event) => {
   //going to figure out do we moveDodgerLeft of moveDodgerRight
