@@ -10,7 +10,7 @@ const moveDodgerLeft = () => {
   const currentLeft = dodger.style.left // '180px'
   let currentLeftNumber = currentLeft.replace('px', '')
   currentLeftNumber = parseInt(currentLeftNumber, 10)
-  dodger.style.left = currentLeftNumber - 1 + 'px' //179px
+  dodger.style.left = currentLeftNumber - 5 + 'px' //179px
 }
 
 const moveDodgerHelper = (event) => {
