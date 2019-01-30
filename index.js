@@ -50,7 +50,9 @@ const moveDodgerHelper = (event) => {
     moveDodgerRight()
   } if (event.keyCode === 38) {
     moveDodgerUp()
-  } if (event.keyCode === )
+  } if (event.keyCode === 40) {
+    moveDodgerDown()
+  }
 }
 // 3 Add event listener
 document.addEventListener('keydown', moveDodgerHelper)
