@@ -9,3 +9,5 @@ const moveDodgerLeft = () => {
   // which mean we need some css changes
   console.log(dodger.style.left)
 }
+// 3 Add event listener
+document.addEventListener()
