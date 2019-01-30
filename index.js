@@ -34,7 +34,7 @@ const moveDodgerUp = () => {
   const currentUp = dodger.style.bottom // '180px'
   let currentUpNumber = currentUp.replace('px', '')
   currentUpNumber = parseInt(currentUpNumber, 10)
-  if (currentUpNumber < 360) {
+  if (currentUpNumber > 0) {
   dodger.style.bottom = currentUpNumber + 10 + 'px' //179px
   }
 }
