@@ -27,7 +27,7 @@ const moveDodgerUp = () => {
   const dodger = document.getElementById('dodger')
   // next thing is change the layout/position of dodger
   // which mean we need some css changes
-  const currentRight = dodger.style.left // '180px'
+  const currentUp = dodger.style.left // '180px'
   let currentRightNumber = currentRight.replace('px', '')
   currentRightNumber = parseInt(currentRightNumber, 10)
   dodger.style.left = currentRightNumber + 10 + 'px' //179px
@@ -39,7 +39,9 @@ const moveDodgerHelper = (event) => {
     moveDodgerLeft()
   } if (event.keyCode === 39) {
     moveDodgerRight()
-  } if (event.keyCode === )
+  } if (event.keyCode === 38) {
+    moveDodgerUp()
+  }
 }
 // 3 Add event listener
 document.addEventListener('keydown', moveDodgerHelper)
