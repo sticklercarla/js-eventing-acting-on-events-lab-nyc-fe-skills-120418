@@ -8,8 +8,8 @@ const moveDodgerLeft = () => {
   // next thing is change the layout/position of dodger
   // which mean we need some css changes
   const currentLeft = dodger.style.left // '180px'
-  currentLeft.replace('px', '')
-  console.log(currentLeft)
+  const currentLeftNumber = currentLeft.replace('px', '')
+  console.log(currentLeftNumber)
 }
 
 const moveDodgerHelper = (event) => {
